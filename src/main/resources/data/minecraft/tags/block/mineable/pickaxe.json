@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "neolearning:bismuth_block",
+    "neolearning:bismuth_ore",
+    "neolearning:bismuth_deepslate_ore"
+  ]
+}
