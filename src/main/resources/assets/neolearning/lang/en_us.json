@@ -1,4 +1,12 @@
 {
+  "item.neolearning.bismuth": "Bismuth",
+  "item.neolearning.raw_bismuth": "Raw Bismuth",
+
+  "block.neolearning.bismuth_block": "Bismuth Block",
+  "block.neolearning.bismuth_ore": "Bismuth Ore",
+
+
+
   "examplemod.configuration.title": "Example Mod Configs",
   "examplemod.configuration.section.examplemod.common.toml": "Example Mod Configs",
   "examplemod.configuration.section.examplemod.common.toml.title": "Example Mod Configs",
