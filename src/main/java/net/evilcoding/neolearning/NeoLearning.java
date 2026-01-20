@@ -1,6 +1,7 @@
 package net.evilcoding.neolearning;
 
 import net.evilcoding.neolearning.block.ModBlocks;
+import net.evilcoding.neolearning.item.ModCreativeModeTabs;
 import net.evilcoding.neolearning.item.ModItems;
 import org.slf4j.Logger;
 
@@ -50,6 +51,9 @@ public class NeoLearning {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        // Creative Mode Tab
+        ModCreativeModeTabs.register(modEventBus);
+
         // Item Register
         ModItems.register(modEventBus);
         // Blocks Register
@@ -65,12 +69,12 @@ public class NeoLearning {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event){
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        if(event.getTabKey() == ModCreativeModeTabs.BISMUTH_ITEMS_TAB) {
             event.accept(ModItems.BISMUTH);
             event.accept(ModItems.RAW_BISMUTH);
         }
 
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+        if(event.getTabKey() == ModCreativeModeTabs.BISMUTH_Blocks_TAB) {
             event.accept(ModBlocks.BISMUTH_BLOCK);
             event.accept(ModBlocks.BISMUTH_ORE);
         }
